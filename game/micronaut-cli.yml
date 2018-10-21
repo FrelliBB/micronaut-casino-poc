@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: game
+---
+testFramework: junit
+sourceLanguage: java

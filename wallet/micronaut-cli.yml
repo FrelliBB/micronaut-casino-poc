@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: wallet
+---
+testFramework: junit
+sourceLanguage: java
