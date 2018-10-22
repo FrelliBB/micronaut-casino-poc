@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  consul:
+    image: consul
+    container_name: consul
+    network_mode: host
+
+  casino-player-service:
+    build: ./player
+    image: casino-player
+    container_name: casino-player
+    network_mode: host
+
+  casino-wallet-service:
+    build: ./wallet
+    image: casino-wallet
+    container_name: casino-wallet
+    network_mode: host

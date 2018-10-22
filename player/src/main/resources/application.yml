@@ -1,3 +1,11 @@
 micronaut:
-    application:
-        name: player
+  application:
+    name: player
+  server:
+    port: ${SERVICE_PORT:8081}
+---
+consul:
+  client:
+    registration:
+      enabled: true
+    defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"

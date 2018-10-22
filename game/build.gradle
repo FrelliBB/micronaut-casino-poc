@@ -2,11 +2,11 @@ plugins {
     id "io.spring.dependency-management" version "1.0.6.RELEASE"
     id "com.github.johnrengelman.shadow" version "4.0.0"
     id "net.ltgt.apt-eclipse" version "0.18"
-    id "net.ltgt.apt-idea" version "0.18"	
+    id "net.ltgt.apt-idea" version "0.18"
 }
 
-apply plugin:"application"
-apply plugin:"java"
+apply plugin: "application"
+apply plugin: "java"
 
 version "0.1"
 group "game"
@@ -33,6 +33,7 @@ dependencies {
     compile "io.micronaut:http-server-netty"
     compileOnly "io.micronaut:inject-java"
     runtime "ch.qos.logback:logback-classic:1.2.3"
+    runtime "io.micronaut:discovery-client"
     testCompile "junit:junit:4.12"
     testCompile "io.micronaut:inject-java"
     testCompile "org.hamcrest:hamcrest-all:1.3"

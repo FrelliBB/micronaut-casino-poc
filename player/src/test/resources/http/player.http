@@ -1,0 +1,28 @@
+### Create a Player
+
+POST http://localhost:8081/api/player
+Content-Type: application/json
+
+{
+  "username": "FrelliBB"
+}
+
+### Lookup a Player
+
+GET http://localhost:8081/api/player/0
+Accept: application/json
+
+###
+
+GET http://localhost:8500/v1/health/node/toph
+
+###
+
+GET http://localhost:8500/v1/health/service/player
+
+###
+
+GET http://service.player.consul:8500/api/player/0
+Accept: application/json
+
+###
